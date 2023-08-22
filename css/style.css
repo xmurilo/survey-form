@@ -1,0 +1,227 @@
+/* ----GERAL---- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  max-width: 128rem;
+}
+/*----CLASSES-REUTILIZAVEIS----*/
+.flex__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.padrao-botao-menor {
+  width: 14.2rem;
+  height: 2.6rem;
+  border-radius: 3.5rem;
+
+  background-color: var(--cor-botao);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.container__botao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem 1.6rem;
+  margin-top: 2.5rem;
+}
+
+.container__botao button:nth-child(3) {
+  width: 30.2rem;
+}
+
+/* CLASSES A SEREM USADAS NO JAVASCRIPT */
+.aparecer__conteudo {
+  display: block;
+}
+.esconder__conteudo{
+  display: none;
+}
+
+/* ----SECTION-HOME---- */
+
+#section-home .img-home {
+  margin: 0rem 5.9rem 0 0 ;
+}
+
+#section-home .img-home picture {
+  min-width: 27.1rem;
+}
+
+#section-home h1 {
+  text-align: center;
+  font-size: 5.3rem;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+#section-home p {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+#section-home .button-home {
+  display: block;
+  margin: auto;
+  width: 19.9rem;
+  height: 3.6rem;
+}
+
+/* ----SECTION-INICIO-PESQUISA---- */
+#section-inicio-pesquisa .img-pesquisa picture {
+  min-width: 40.3rem;
+}
+
+#section-inicio-pesquisa h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+#section-inicio-pesquisa p {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+#section-inicio-pesquisa .container__botao {
+  display: flex;
+  gap: 0 1.8rem;
+}
+
+/*----SECTION-STATUS-DE-CONTA----*/
+
+#section-status-de-conta .img-status picture {
+  width: 48rem;
+}
+#section-status-de-conta h3,
+#section-investimento h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#section-status-de-conta select,
+#section-investimento select {
+  width: 27.8rem;
+  height: 3.3rem;
+  background-repeat: no-repeat;
+  background-size: 1.4rem 0.9rem;
+  background-position: 1.1rem 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem 0.5rem 2.9rem;
+  appearance: none;
+  background-image: url('../imgs/icons/select-flecha.svg');
+}
+
+#section-status-de-conta select:focus,
+#section-investimento select:focus {
+  background-image: url('../imgs/icons/select-flecha-selecionada.svg');
+}
+#section-status-de-conta select::placeholder {
+  width: 22.9rem;
+  height: 2.3rem;
+}
+
+#section-status-de-conta label,
+#section-investimento label {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+#section-status-de-conta label input,
+#section-investimento label input {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgba(62, 178, 94, 0.3);
+  border-radius: 2.5rem;
+  appearance: none;
+}
+#section-status-de-conta label input:checked,
+#section-investimento label input:checked {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--cor-input-checked);
+}
+
+/*----SECTION-INVESTIMENTO----*/
+#section-investimento label input {
+  border-radius: 0.2rem;
+}
+
+/*----SECTION-AREA-TEXTO----*/
+#section-area-texto textarea {
+  width: 27.8rem;
+  height: 13.1rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  resize: none;
+}
+
+#section-area-texto p {
+  width: 26.1rem;
+  height: 5.9rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+/*----SECTION-FORMULARIO----*/
+#section-form form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.4rem;
+}
+#section-form label {
+  display: flex;
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+#section-form  input {
+  width: 27.8rem;
+  height: 3.3rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#section-form  input[type='text']::placeholder {
+  width: 18.1rem;
+  height: 2.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+#section-form  input[type='email']::placeholder {
+  width: 19.9rem;
+  height: 2.1rem;
+}
+
+#section-form  input[type='number'] {
+  width: 11.1rem;
+}
+
+#section-form  input[type='number']::placeholder {
+  width: 8.1rem;
+  height: 2.1rem;
+}
+#section-form form .container__botao{
+  flex-direction: column;
+}
+#section-form form .container__botao button {
+  width: 100%;
+}

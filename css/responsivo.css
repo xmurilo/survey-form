@@ -1,0 +1,41 @@
+@media (min-width: 76.8rem) {
+  main {
+    width: 100%;
+  }
+  /*----CLASSES-REUTILIZAVEIS----*/
+  .flex__container {
+    flex-direction: row;
+  }
+  .flex__container-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ----HOME---- */
+  #section-home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #section-home .flex__container-text {
+    width: 47.3rem;
+    margin-left: 8rem;
+  }
+  #section-home .flex__container-text h1 {
+    font-size: 11.1rem;
+  }
+  #section-home .flex__container-text p {
+    white-space: nowrap;
+  }
+
+  /* Hover no botao do home para desktops */
+  #section-home .button-home {
+    color: var(--cor-botao);
+    margin: auto;
+  }
+  #section-home .button-home:hover {
+    color: #fff;
+    transition: 0.2s ease-in-out;
+  }
+}
