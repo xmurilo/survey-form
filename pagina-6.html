@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <section id="section-form">
+    <div class="flex__container ">
+        <picture>
+          <source
+            media="(min-width:760px)"
+            srcset="imgs/imgs-desktop/6.svg"
+          />
+          <source 
+          media="(min-width:760px)" 
+          srcset="imgs/imgs-mobile/5.svg"/>
+          <img src="imgs/imgs-mobile/6.svg" alt="Personagem mexendo no computador" />
+        </picture>
+      <div class="flex__container-text">
+        <form action="">
+            <p>
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" placeholder="Nasser Toghiri">
+            </p>
+          <p>
+            <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="N.Toghiri@Gmail.com">
+          </p>
+          <p>
+            <label for="age">Age:</label>
+            <input type="number"  id="age" placeholder="- -">
+          </p>
+        
+        </form>
+        <div class="flex__container-botao">
+          <a href="./pagina-5.html"><button class="padrao-botao">Back</button></a>
+          <a href=""><button type="submit" class="padrao-botao">Submit</button></a>
+        </div>
+      </div>
+    </div>            
+  </section>
+</body>
+</html>

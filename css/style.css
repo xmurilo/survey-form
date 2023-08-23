@@ -1,5 +1,13 @@
 /* ----GERAL---- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -9,18 +17,43 @@ body {
 main {
   max-width: 128rem;
 }
+section {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
 /*----CLASSES-REUTILIZAVEIS----*/
 .flex__container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
-.padrao-botao-menor {
+.flex__container-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex__container-botao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem 1.6rem;
+}
+
+.padrao-botao {
   width: 14.2rem;
   height: 2.6rem;
   border-radius: 3.5rem;
-
   background-color: var(--cor-botao);
   color: #fff;
   font-size: 1.6rem;
@@ -28,64 +61,45 @@ main {
   border: none;
   cursor: pointer;
 }
-
-.container__botao {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.8rem 1.6rem;
-  margin-top: 2.5rem;
-}
-
-.container__botao button:nth-child(3) {
+.padrao-botao-maior {
   width: 30.2rem;
-}
-
-/* CLASSES A SEREM USADAS NO JAVASCRIPT */
-.aparecer__conteudo {
-  display: block;
-}
-.esconder__conteudo{
-  display: none;
 }
 
 /* ----SECTION-HOME---- */
 
-#section-home .img-home {
-  margin: 0rem 5.9rem 0 0 ;
-}
-
-#section-home .img-home picture {
-  min-width: 27.1rem;
+#section-home picture {
+  padding-right: 5.9rem;
 }
 
 #section-home h1 {
   text-align: center;
   font-size: 5.3rem;
+  padding: 2.5rem 0 0 0;
   font-weight: 700;
-  margin: 25px 0;
 }
 
 #section-home p {
   text-align: center;
+  padding: 2.5rem 4.9rem 2.2rem 4.9rem;
   font-size: 2.4rem;
   font-weight: 700;
 }
 
 #section-home .button-home {
   display: block;
-  margin: auto;
+  margin: 2.2rem auto auto auto;
   width: 19.9rem;
   height: 3.6rem;
 }
 
 /* ----SECTION-INICIO-PESQUISA---- */
-#section-inicio-pesquisa .img-pesquisa picture {
+
+#section-inicio-pesquisa picture {
   min-width: 40.3rem;
 }
 
 #section-inicio-pesquisa h2 {
+  padding: 2.788rem 0 2.2rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
@@ -93,44 +107,49 @@ main {
 #section-inicio-pesquisa p {
   text-align: center;
   font-size: 1.8rem;
+  width: 33.3rem;
   font-weight: 400;
 }
 
-#section-inicio-pesquisa .container__botao {
-  display: flex;
-  gap: 0 1.8rem;
+#section-inicio-pesquisa .flex__container-botao {
+  padding-top: 1.6rem;
 }
 
 /*----SECTION-STATUS-DE-CONTA----*/
 
-#section-status-de-conta .img-status picture {
-  width: 48rem;
+#section-status-de-conta picture {
+  min-width: 36rem;
+  padding-bottom: 2.96rem;
 }
-#section-status-de-conta h3,
-#section-investimento h3 {
+#section-status-de-conta h3 {
   font-size: 1.6rem;
   font-weight: 700;
 }
 
-#section-status-de-conta select,
-#section-investimento select {
+#section-status-de-conta h3:nth-child(3) {
+  padding-bottom: 0.2rem;
+}
+
+#section-status-de-conta select {
   width: 27.8rem;
   height: 3.3rem;
+  padding: 0.5rem 2rem 0.5rem 2.9rem;
+  margin: 0.3rem 0 1.1rem 0;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+
+  background-image: url('../imgs/icons/select-flecha.svg');
   background-repeat: no-repeat;
   background-size: 1.4rem 0.9rem;
   background-position: 1.1rem 1.3rem;
-  border-radius: 2rem;
-  border: 1px solid rgba(0, 0, 0, 0.25);
   font-size: 1.6rem;
-  padding: 0.5rem 2rem 0.5rem 2.9rem;
   appearance: none;
-  background-image: url('../imgs/icons/select-flecha.svg');
 }
 
-#section-status-de-conta select:focus,
-#section-investimento select:focus {
+#section-status-de-conta select:focus {
   background-image: url('../imgs/icons/select-flecha-selecionada.svg');
 }
+
 #section-status-de-conta select::placeholder {
   width: 22.9rem;
   height: 2.3rem;
@@ -139,45 +158,101 @@ main {
 #section-status-de-conta label,
 #section-investimento label {
   display: flex;
+  align-items: center;
+  gap: 0 0.7rem;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.1rem;
 }
 
-#section-status-de-conta label input,
-#section-investimento label input {
+#section-status-de-conta label input {
   width: 1.5rem;
   height: 1.5rem;
   background-color: rgba(62, 178, 94, 0.3);
   border-radius: 2.5rem;
   appearance: none;
 }
-#section-status-de-conta label input:checked,
-#section-investimento label input:checked {
-  width: 1.6rem;
-  height: 1.6rem;
+#section-status-de-conta label input:checked {
   background-color: var(--cor-input-checked);
 }
 
+#section-status-de-conta .flex__container-botao {
+  padding-top: 2.5rem;
+}
+
 /*----SECTION-INVESTIMENTO----*/
+
+#section-investimento .flex__container-botao {
+  padding-top: 2.1rem;
+  
+}
+
+#section-investimento h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#section-investimento h3:nth-child(1) {
+  padding-top: 1.585rem;
+}
+
+#section-investimento h3:nth-child(3) {
+  padding-bottom: 0.9rem;
+}
+
+#section-investimento select {
+  width: 27.8rem;
+  height: 3.3rem;
+  background-repeat: no-repeat;
+  background-size: 1.4rem 1.4rem;
+  background-position: 1rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem 0.5rem 2.9rem;
+  margin: 0.4rem 0 1rem 0;
+  appearance: none;
+  background-image: url('../imgs/icons/select-flecha.svg');
+}
+
+#section-investimento select:focus {
+  background-image: url('../imgs/icons/select-flecha-selecionada.svg');
+}
+#section-investimento label {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0 0.7rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
 #section-investimento label input {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgba(62, 178, 94, 0.3);
   border-radius: 0.2rem;
+  appearance: none;
+}
+
+#section-investimento label input:checked {
+  background-color: var(--cor-input-checked);
 }
 
 /*----SECTION-AREA-TEXTO----*/
 #section-area-texto textarea {
   width: 27.8rem;
   height: 13.1rem;
+  margin: 1rem 0 2.3rem 0;
   border-radius: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.25);
   resize: none;
 }
 
 #section-area-texto p {
-  width: 26.1rem;
-  height: 5.9rem;
   font-size: 1.6rem;
   font-weight: 700;
+  width: 26.1rem;
 }
 /*----SECTION-FORMULARIO----*/
 #section-form form {
@@ -187,41 +262,56 @@ main {
 }
 #section-form label {
   display: flex;
+  padding-bottom: 0.4rem;
   font-size: 1.6rem;
-  margin-left: 1rem;
   font-weight: 700;
 }
 
-#section-form  input {
+#section-form input {
   width: 27.8rem;
   height: 3.3rem;
   padding: 0.6rem 1.1rem;
   border-radius: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 1.6rem;
 }
 
-#section-form  input[type='text']::placeholder {
+#section-form input[type='text'] {
+  margin-bottom: 1.4rem;
+}
+#section-form input[type='email'] {
+  margin-bottom: 1.0rem;
+}
+#section-form input[type='number'] {
+  margin-bottom: 3.4rem;
+}
+
+#section-form input[type='text']::placeholder {
   width: 18.1rem;
   height: 2.2rem;
-  font-size: 1.6rem;
   font-weight: 400;
 }
-#section-form  input[type='email']::placeholder {
+#section-form input[type='email']::placeholder {
   width: 19.9rem;
   height: 2.1rem;
 }
 
-#section-form  input[type='number'] {
+#section-form input[type='number'] {
   width: 11.1rem;
 }
 
-#section-form  input[type='number']::placeholder {
+#section-form input[type='number']::placeholder {
   width: 8.1rem;
   height: 2.1rem;
 }
-#section-form form .container__botao{
+#section-form  .flex__container-botao {
   flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem 0;
 }
-#section-form form .container__botao button {
+#section-form .padrao-botao {
   width: 100%;
+  width: 30.2rem;
+  height: 2.6rem;
+  font-size: 1.6rem;
 }

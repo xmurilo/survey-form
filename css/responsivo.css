@@ -1,41 +1,261 @@
-@media (min-width: 76.8rem) {
-  main {
-    width: 100%;
+@media (min-width: 1024px) {
+  /* GERAL */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  /*----CLASSES-REUTILIZAVEIS----*/
+
+  /*---CLASSES-REUTILIZAVEIS----*/
   .flex__container {
     flex-direction: row;
   }
-  .flex__container-text {
+
+  .flex__container-botao {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem 1.6rem;
   }
 
+  .padrao-botao {
+    width: 19.8rem;
+    height: 3.6rem;
+    font-size: 2.2rem;
+  }
+  .padrao-botao:hover {
+    color: #000000;
+    background-color: #ffff7d;
+    transition: 0.2s ease-in-out;
+  }
+  .padrao-botao-maior {
+    width: 41.8rem;
+  }
   /* ----HOME---- */
-  #section-home {
+  #section-home .flex__container {
+    gap: 0 8rem ;
+  }
+
+  #section-home .flex__container-text {
+    width: 47.3rem;
+  }
+
+  #section-home  h1 {
+    font-size: 11.1rem;
+  }
+  #section-home  p {
+    white-space: nowrap;
+    font-size: 2.9rem;
+    padding: 4.4rem 0 6.6rem 0;
+  }
+  #section-home picture {
+    padding: 0;
+  }
+
+
+  /* Hover no BOTAO do HOME para DESKTOPS */
+  #section-home .button-home {
+    color: var(--cor-botao);
+    margin: auto;
+    transition: 0.2s ease-in-out;
+  }
+  #section-home .button-home:hover {
+    color: #fff;
+  }
+
+  /* ----SECTION-INICIO-PESQUISA---- */
+  #section-inicio-pesquisa {
+    display: flex;
+    align-items: center;
+  }
+  #section-inicio-pesquisa .flex__container-text {
+    width: 53.4rem;
+    margin-left: 7.9rem;
+  }
+
+  #section-inicio-pesquisa .flex__container-text h2 {
+    font-size: 3.9rem;
+  }
+
+  #section-inicio-pesquisa .flex__container-text p {
+    font-size: 2.8rem;
+    width: 44.3rem;
+  }
+  /* ----SECTION-STATUS-DE-CONTA----- */
+  #section-status-de-conta {
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
 
-  #section-home .flex__container-text {
-    width: 47.3rem;
-    margin-left: 8rem;
-  }
-  #section-home .flex__container-text h1 {
-    font-size: 11.1rem;
-  }
-  #section-home .flex__container-text p {
-    white-space: nowrap;
+  #section-status-de-conta .flex__container {
+    gap: 0 6.8rem;
   }
 
-  /* Hover no botao do home para desktops */
-  #section-home .button-home {
-    color: var(--cor-botao);
-    margin: auto;
+  #section-status-de-conta .flex__container-text {
+    width: 53.4rem;
+    align-items: initial;
   }
-  #section-home .button-home:hover {
-    color: #fff;
-    transition: 0.2s ease-in-out;
+  #section-status-de-conta .flex__container-botao {
+    /*Input[radio] tem 17px de padding-bottom a diferença seria de 32 
+    32 - 17 == 15 */
+    padding-top: 1.5rem;
+    justify-content: initial;
+  }
+
+  #section-status-de-conta h3 {
+    font-size: 2.6rem;
+  }
+  #section-status-de-conta select {
+    width: 45.9rem;
+    height: 5.2rem;
+    background-size: 2.2rem 1.4rem;
+    background-position: 0.5rem 2rem;
+    margin: 0.8rem 0 4.2rem 0;
+    font-size: 2.7rem;
+  }
+
+  #section-status-de-conta label {
+    font-size: 2.6rem;
+    padding: 1.7rem 1.1rem 1.7rem 0;
+  }
+
+  #section-status-de-conta label input {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* ----SECTION-INVESTIMENTO----- */
+  #section-investimento .flex__container {
+    gap: 0 9.2rem;
+  }
+  #section-investimento .flex__container-text {
+    align-items: initial;
+  }
+
+  #section-investimento .flex__container-botao {
+    /*Input[CHECK] tem 13px de padding-bottom a diferença seria de 32 
+    32 - 13 == 19 */
+    width: 42.4rem;
+    padding-top: 1.9rem;
+    justify-content: flex-start;
+  }
+
+  #section-investimento h3 {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  #section-investimento select {
+    width: 45.9rem;
+    height: 5.2rem;
+    margin: 0.8rem 0 2.9rem 0;
+    padding: 0.5rem 2rem 0.5rem 4rem;
+    background-repeat: no-repeat;
+    background-size: 2.2rem 1.4rem;
+    background-position: 1rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    font-size: 2.6rem;
+  }
+
+  #section-investimento select:focus {
+    background-image: url('../imgs/icons/select-flecha-selecionada.svg');
+  }
+
+  #section-investimento label {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2.4rem 1.3rem 0rem;
+    font-size: 2.6rem;
+  }
+  #section-investimento label input {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  /* ----SECTION-AREA-TEXTO---- */
+  #section-area-texto .flex__container {
+    gap: 0 9.2rem;
+  }
+  #section-area-texto .flex__container-text {
+    width: 46.6rem;
+  }
+  #section-area-texto textarea {
+    display: block;
+    width: 45.9rem;
+    height: 22.5rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    resize: none;
+    margin: 1rem 0 6.2rem 0;
+  }
+
+  #section-area-texto p {
+    font-size: 2.6rem;
+    font-weight: 700;
+    width: 46.6rem;
+  }
+
+  /*----SECTION-FORMULARIO----*/
+  #section-form .flex__container {
+    gap: 0 9.4rem;
+  }
+  #section-form .flex__container-text {
+    align-items: flex-start;
+  }
+
+  #section-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  #section-form label {
+    display: flex;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding-bottom: 0.8rem;
+  }
+
+  #section-form input {
+    width: 45.9rem;
+    height: 5.2rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    font-size: 2.7rem;
+    font-weight: 400;
+  }
+  #section-form input[type='text'] {
+    margin-bottom: 2.7rem;
+  }
+  #section-form input[type='email'] {
+    margin-bottom: 2.4rem;
+  }
+  #section-form input[type='number'] {
+    width: 15.2rem;
+    margin-bottom: 4.4rem;
+  }
+
+  #section-form input[type='text']::placeholder {
+    width: 19rem;
+    height: 4rem;
+  }
+
+  #section-form input[type='email']::placeholder {
+    width: 27.4rem;
+    height: 4rem;
+  }
+
+  #section-form input[type='number']::placeholder {
+    width: 10.8rem;
+    height: 4rem;
+    padding: 1rem;
+  }
+
+  #section-form .padrao-botao {
+    width: 41.8rem;
+    height: 3.6rem;
+    font-size: 2.2rem;
   }
 }

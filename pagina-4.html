@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/root.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+     <section id="section-investimento">
+        <div class="flex__container">
+          <div class="img-investimento">
+            <picture>
+              <source
+                media="(min-width:760px)"
+                srcset="imgs/imgs-desktop/4.svg"
+              />
+              <source 
+              media="(min-width:760px)" 
+              srcset="imgs/imgs-mobile/4.svg"/>
+              <img src="imgs/imgs-mobile/4.svg" alt="Personagem mexendo no computador" />
+            </picture>
+          </div>
+
+          <div class="flex__container-text"> 
+            <form action="#">
+                <h3>How do you decide to invest?</h3>
+
+                <select name="#" id="#" >
+                  <option value="financial-goals">Financial Goals</option>
+                  <option value="Increase-income">Increase income</option>
+                  <option value="financial-foundation">Have a financial foundation</option>
+                  <option value="market-research">Market Research</option>
+                </select>
+
+               <h3>What resources have you used or <br>are you using for your training?</h3>
+                <div class="container-inputs">
+                  <label for="books-articles">
+                    <input type="checkbox" name="books-articles" id="books-articles">
+                    Books and articles
+                  </label>
+                  <label for="tutorial-videos">
+                    <input type="checkbox" name="tutorial-videos" id="tutorial-videos">
+                    YouTube tutorial videos
+                  </label>
+                  <label for="face-courses">
+                    <input type="checkbox" name="face-courses" id="face-courses">
+                    Online or face to face courses 
+                  </label>
+                  <label for="experience">
+                    <input type="checkbox" name="experience" id="experience">
+                    Experience with little investment
+                  </label>
+                </div>
+            </form>
+         
+
+            <div class="flex__container-botao">
+              <a href="./pagina-3.html"><button class="padrao-botao">Back</button></a>
+              <a href=""><button class="padrao-botao">Next</button></a>
+              <a href="./pagina-5.html"><button class="padrao-botao padrao-botao-maior">Skip</button></a>
+             </div>
+          </div>
+        </div>
+      </div>
+      </section> 
+
+</body>
+</html>
