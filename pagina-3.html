@@ -25,43 +25,48 @@
             <img src="imgs/imgs-mobile/3.svg" alt="Personagem mexendo no computador" />
           </picture>
           <div class="flex__container-text">  
-              <form action="#" method="post">
+             <form action="#" id="form-section-status">
                 <h3>What is the status of your account?</h3>
-                  <select class="padrao-select" name="#" id="#" >
-                  <option value="not-invested-yet">I have not invested yet.</option>
+                <select id="select" >
+                  <option value="">Select an option</option>
+                  <option value="not-invested-yet">
+                    I have not invested yet.
+                  </option>
                   <option value="no-account">No Account Exists</option>
-                  <option value="account-unavailable">Account Information Unavailable</option>
+                  <option value="account-unavailable">Account Information       Unavailable
+                  </option>
                   <option value="account-status-na">Account Status: N/A</option>
-                  </select>
+                </select>
+                
                     <h3>In which financial markets do you operate?</h3>
                    <div class="container__inputs">
                     <label for="stock-market">
                       <input type="radio" name="market" id="stock-market">
                       Stock Market
-                      </label>
-                      <label for="foreign-exchange">
+                    </label>
+                    <label for="foreign-exchange">
                       <input type="radio" name="market" id="foreign-exchange">
                       Foreign Exchange
-                      </label>
-                      <label for="commodity">
+                    </label>
+                    <label for="commodity">
                       <input type="radio" name="market" id="commodity">
                       Commodity
-                      </label>
-                      <label for="bond-market">
+                    </label>
+                    <label for="bond-market">
                       <input type="radio" name="market" id="bond-market">
                       Bond Market
-                      </label>
-                      <label for="cryptocurrency-market">
+                    </label>
+                    <label for="cryptocurrency-market">
                         <input type="radio" name="market" id="cryptocurrency-market">
                         Cryptocurrency Market
-                      </label>
-                   </div>
-                </form>
+                    </label>
+                 </div>
+               </form>
                 <div class="flex__container-botao">
                   <a href="pagina-2.html">
                     <button class="padrao-botao">Back</button>
                   </a>
-                  <a href=""><button class="padrao-botao">Next</button>
+                  <a><button id="botao-next" class="padrao-botao ">Next</button>
                   </a>
                   <a href="pagina-4.html"><button class=" padrao-botao padrao-botao-maior">Skip</button>
                   </a>
@@ -69,6 +74,8 @@
             </div>
         </div>
      </section>
+
   </main>
+  <script src="js/index.js"></script>
 </body>
 </html>

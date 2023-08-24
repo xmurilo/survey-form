@@ -41,6 +41,10 @@
     width: 47.3rem;
   }
 
+  #section-home picture {
+    padding: 0;
+  }
+
   #section-home  h1 {
     font-size: 11.1rem;
   }
@@ -49,9 +53,8 @@
     font-size: 2.9rem;
     padding: 4.4rem 0 6.6rem 0;
   }
-  #section-home picture {
-    padding: 0;
-  }
+  
+ 
 
 
   /* Hover no BOTAO do HOME para DESKTOPS */
@@ -61,7 +64,7 @@
     transition: 0.2s ease-in-out;
   }
   #section-home .button-home:hover {
-    color: #fff;
+    color: #000;
   }
 
   /* ----SECTION-INICIO-PESQUISA---- */
