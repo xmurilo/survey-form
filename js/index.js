@@ -8,7 +8,7 @@ const radiosStatus = document.querySelectorAll("input[type='radio'][name='market
 nextBotao.addEventListener('click', () => {
   for (radio of radiosStatus) {
     if (radio.checked !== false && select.value !== '') {
-      return (window.location.href = 'pagina-4.html');
+      return window.location.href = 'pagina-4.html';
     }
   }
   return alert('You must selact both options');
