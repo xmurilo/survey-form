@@ -49,9 +49,9 @@
     font-size: 11.1rem;
   }
   #section-home  p {
+    padding: 4.4rem 0 6.6rem 0;
     white-space: nowrap;
     font-size: 2.9rem;
-    padding: 4.4rem 0 6.6rem 0;
   }
   
  
@@ -59,8 +59,8 @@
 
   /* Hover no BOTAO do HOME para DESKTOPS */
   #section-home .button-home {
-    color: var(--cor-botao);
     margin: auto;
+    color: var(--cor-botao);
     transition: 0.2s ease-in-out;
   }
   #section-home .button-home:hover {
@@ -82,8 +82,8 @@
   }
 
   #section-inicio-pesquisa .flex__container-text p {
-    font-size: 2.8rem;
     width: 44.3rem;
+    font-size: 2.8rem;
   }
   /* ----SECTION-STATUS-DE-CONTA----- */
   #section-status-de-conta {
@@ -113,15 +113,15 @@
   #section-status-de-conta select {
     width: 45.9rem;
     height: 5.2rem;
+    margin: 0.8rem 0 4.2rem 0;
     background-size: 2.2rem 1.4rem;
     background-position: 0.5rem 2rem;
-    margin: 0.8rem 0 4.2rem 0;
     font-size: 2.7rem;
   }
 
   #section-status-de-conta label {
-    font-size: 2.6rem;
     padding: 1.7rem 1.1rem 1.7rem 0;
+    font-size: 2.6rem;
   }
 
   #section-status-de-conta label input {
@@ -140,9 +140,9 @@
   #section-investimento .flex__container-botao {
     /*Input[CHECK] tem 13px de padding-bottom a diferença seria de 32 
     32 - 13 == 19 */
+    justify-content: flex-start;
     width: 42.4rem;
     padding-top: 1.9rem;
-    justify-content: flex-start;
   }
 
   #section-investimento h3 {
@@ -196,9 +196,9 @@
   }
 
   #section-area-texto p {
+    width: 46.6rem;
     font-size: 2.6rem;
     font-weight: 700;
-    width: 46.6rem;
   }
 
   /*----SECTION-FORMULARIO----*/
@@ -215,9 +215,9 @@
   }
   #section-form label {
     display: flex;
+    padding-bottom: 0.8rem;
     font-size: 2.6rem;
     font-weight: 700;
-    padding-bottom: 0.8rem;
   }
 
   #section-form input {
