@@ -27,7 +27,7 @@ fazer o "Submit" quando os campos do formulário estiverem preenchidos.
 - ✨Validação de Formulario: Aprendi outra forma de validar formulário dentre outras diversas.
 - ✨ Mais conhecimento em JS: Como pegar valor de input e trocar de pagina
     - OBS: Para trocar de pagina recomendação do instrutor o melhor seria criar um roteamento de páginas com VanillaJS
-    - https://dev.to/rohanbagchi/how-to-write-a-vanillajs-router-hk3  | Como escrever roteamento de páginas em Vanilla JS
+    -  <a target="_blank" href="https://dev.to/rohanbagchi/how-to-write-a-vanillajs-router-hk3">Como escrever roteamento de páginas em Vanilla JS</a>  | Link da Recomendação do instrutor
     - Não tive tempo para aplicar pois acreditei que seria complexo e iria copiar código que não saberia qual a função dele.
 - ✨Eficiência na Documentação dos códigos.
 - ✨ Padronização de Códigos em classes.
