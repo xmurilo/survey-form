@@ -9,6 +9,7 @@
 }
 
 html {
+  /* 1rem vai equivaler a 10px */
   font-size: 62.5%;
 }
 body {

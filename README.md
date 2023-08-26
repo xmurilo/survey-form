@@ -10,7 +10,8 @@ fazer o "Submit" quando os campos do formulário estiverem preenchidos.
 
 - ⭐ Recurso 1: Ao selecionar input[radio]/input[checkbox] e select o Usuário ao clicar em “Next” vai para próxima tela.
 - ⭐ Recurso 2: Validação de formulário so Usuário so consegue fazer o “Submit” ao preenche os campos do Formulário.
-- ⭐ Recurso 3: Responsividade para Desktop/Mobile.
+- ⭐ Recurso 3: Responsividade para Desktop/Mobile/Tablet.
+- ⭐ Recurso 4: Armazenar valores dos campos no Local Storage
 
 ## ⚡Tecnologias Usadas
   <div>
@@ -31,6 +32,8 @@ fazer o "Submit" quando os campos do formulário estiverem preenchidos.
     - Não tive tempo para aplicar pois acreditei que seria complexo e iria copiar código que não saberia qual a função dele.
 - ✨Eficiência na Documentação dos códigos.
 - ✨ Padronização de Códigos em classes.
+- ✨ Armazenar valores dos campos no Local Storage.
+
 
 ## O que posso melhorar?  🔧
 
