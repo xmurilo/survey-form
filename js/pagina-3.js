@@ -9,10 +9,10 @@ nextBotao.addEventListener('click', () => {
   for (radio of radiosStatus) {
     if (radio.checked !== false && select.value !== '') {
       // Armazenando os valores no Local Storage
-      localStorage.setItem('Status_Account', select.value)
-      localStorage.setItem('Market_Financial', radio.id)
-       // Redirecionando para próxima página 
-      return window.location.href = 'pagina-4.html';
+      localStorage.setItem('Status_Account', select.value);
+      localStorage.setItem('Market_Financial', radio.id);
+      // Redirecionando para próxima página
+      return (window.location.href = 'pagina-4.html');
     }
   }
   // Alerta caso o usuario nao selecione nenhuma opçao (SELECT e RADIO)

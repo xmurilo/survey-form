@@ -1,81 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Survey Form</title>
-  <link rel="stylesheet" href="css/root.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsivo.css">
-  
-</head>
-<body>
-  <main>
-     <!------SECTION-STATUS-CONTA------>
-     <section id="section-status-de-conta">
-        <div class="flex__container ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+  </head>
+  <body>
+    <main>
+      <!------SECTION-STATUS-CONTA------>
+      <section id="section-status-de-conta">
+        <div class="flex__container">
           <picture>
-            <source
-              media="(min-width:760px)"
-              srcset="imgs/imgs-desktop/3.svg"
-            />
-            <source 
-            media="(min-width:760px)" 
-            srcset="imgs/imgs-mobile/3.svg"/>
+            <source media="(min-width:760px)" srcset="imgs/imgs-desktop/3.svg" />
+            <source media="(min-width:760px)" srcset="imgs/imgs-mobile/3.svg" />
             <img src="imgs/imgs-mobile/3.svg" alt="Personagem mexendo no computador" />
           </picture>
-          <div class="flex__container-text">  
-             <form action="#" id="form-section-status">
-                <h3>What is the status of your account?</h3>
-                <select id="select" >
-                  <option value="">Select an option</option>
-                  <option value="not-invested-yet">
-                    I have not invested yet.
-                  </option>
-                  <option value="no-account">No Account Exists</option>
-                  <option value="account-unavailable">Account Information       Unavailable
-                  </option>
-                  <option value="account-status-na">Account Status: N/A</option>
-                </select>
-                
-                    <h3>In which financial markets do you operate?</h3>
-                   <div class="container__inputs">
-                    <label for="stock-market">
-                      <input type="radio" name="market" id="stock-market">
-                      Stock Market
-                    </label>
-                    <label for="foreign-exchange">
-                      <input type="radio" name="market" id="foreign-exchange">
-                      Foreign Exchange
-                    </label>
-                    <label for="commodity">
-                      <input type="radio" name="market" id="commodity">
-                      Commodity
-                    </label>
-                    <label for="bond-market">
-                      <input type="radio" name="market" id="bond-market">
-                      Bond Market
-                    </label>
-                    <label for="cryptocurrency-market">
-                        <input type="radio" name="market" id="cryptocurrency-market">
-                        Cryptocurrency Market
-                    </label>
-                 </div>
-               </form>
-                <div class="flex__container-botao">
-                  <a href="pagina-2.html">
-                    <button class="padrao-botao">Back</button>
-                  </a>
-                  <a><button id="botao-next" class="padrao-botao ">Next</button>
-                  </a>
-                  <a href="pagina-4.html"><button class=" padrao-botao padrao-botao-maior">Skip</button>
-                  </a>
-                </div>
-            </div>
-        </div>
-     </section>
+          <div class="flex__container-text">
+            <form action="#" id="form-section-status">
+              <h3>What is the status of your account?</h3>
+              <select id="select">
+                <option value="">Select an option</option>
+                <option value="not-invested-yet">I have not invested yet.</option>
+                <option value="no-account">No Account Exists</option>
+                <option value="account-unavailable">Account Information Unavailable</option>
+                <option value="account-status-na">Account Status: N/A</option>
+              </select>
 
-  </main>
-  <script src="js/pagina-3.js"></script>
-</body>
+              <h3>In which financial markets do you operate?</h3>
+              <div class="container__inputs">
+                <label for="stock-market">
+                  <input type="radio" name="market" id="stock-market" />
+                  Stock Market
+                </label>
+                <label for="foreign-exchange">
+                  <input type="radio" name="market" id="foreign-exchange" />
+                  Foreign Exchange
+                </label>
+                <label for="commodity">
+                  <input type="radio" name="market" id="commodity" />
+                  Commodity
+                </label>
+                <label for="bond-market">
+                  <input type="radio" name="market" id="bond-market" />
+                  Bond Market
+                </label>
+                <label for="cryptocurrency-market">
+                  <input type="radio" name="market" id="cryptocurrency-market" />
+                  Cryptocurrency Market
+                </label>
+              </div>
+            </form>
+            <div class="flex__container-botao">
+              <a href="pagina-2.html" class="padrao-botao"> Back </a>
+              <a id="botao-next" class="padrao-botao"> Next </a>
+
+              <a href="pagina-4.html" class="padrao-botao padrao-botao-maior"> Skip </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/pagina-3.js"></script>
+  </body>
 </html>

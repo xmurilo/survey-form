@@ -5,7 +5,7 @@ botaoHome.addEventListener('mouseover', () => {
   botaoHome.innerHTML = `Just Go Ahead`;
 });
 
-  // Evento de quando o mouse sai de cima do botao
+// Evento de quando o mouse sai de cima do botao
 botaoHome.addEventListener('mouseout', () => {
   // Mudando o texto do HTML para o original após 300 milisegundos
   setTimeout(() => {

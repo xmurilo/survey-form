@@ -1,7 +1,7 @@
-@media (min-width:768px ) {
+@media (min-width: 768px) {
   /* Largura para TABLETS  */
   .flex__container-botao {
-   width: 30.2rem;
+    width: 30.2rem;
   }
   picture {
     width: 38rem;
@@ -17,7 +17,7 @@
     align-items: center;
   }
 
-  picture{
+  picture {
     width: initial;
   }
   /*---CLASSES-REUTILIZAVEIS----*/
@@ -38,6 +38,7 @@
     width: 19.8rem;
     height: 3.6rem;
     font-size: 2.2rem;
+    transition: 0.2s ease-in-out;
   }
   .padrao-botao:hover {
     color: #000000;
@@ -49,7 +50,7 @@
   }
   /* ----HOME---- */
   #section-home .flex__container {
-    gap: 0 8rem ;
+    gap: 0 8rem;
   }
 
   #section-home .flex__container-text {
@@ -60,22 +61,20 @@
     padding: 0;
   }
 
-  #section-home  h1 {
+  #section-home h1 {
     font-size: 11.1rem;
   }
-  #section-home  p {
+  #section-home p {
     padding: 4.4rem 0 6.6rem 0;
     white-space: nowrap;
     font-size: 2.9rem;
   }
-  
+
   /* Hover no BOTAO do HOME para DESKTOPS */
-  #section-home .button-home {
-    margin: auto;
+  #section-home .padrao-botao {
     color: var(--cor-botao);
-    transition: 0.2s ease-in-out;
   }
-  #section-home .button-home:hover {
+  #section-home .padrao-botao:hover {
     color: #000;
   }
 
@@ -277,6 +276,22 @@
   #section-form .padrao-botao {
     width: 41.8rem;
     height: 3.6rem;
+    font-size: 2.2rem;
+  }
+
+  /* ----SECTION-SUCESSO---- */
+  #section-sucesso .flex__container {
+    gap: 0 8rem;
+  }
+
+  #section-sucesso h1 {
+    font-size: 5.2rem;
+  }
+  #section-sucesso p {
+    font-size: 3.2rem;
+    padding: 3.5rem 0 3.2rem;
+  }
+  #section-sucesso .padrao-botao {
     font-size: 2.2rem;
   }
 }

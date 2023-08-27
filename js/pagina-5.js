@@ -11,8 +11,8 @@ nextBotao.addEventListener('click', () => {
     alert('You must fill in the text field');
   } else {
     //Armazenando comentario do usuario dentro do Local Storage
-    localStorage.setItem('User_Comments', textArea.value)
-  // Redirecionando para próxima página 
+    localStorage.setItem('User_Comments', textArea.value);
+    // Redirecionando para próxima página
     window.location.href = 'pagina-6.html';
   }
 });
