@@ -1,7 +1,7 @@
 # survey-form
 ## Sobre o projeto 📗
 
-Desafio da Compass UOL que consiste em layouts responsivos sendo especificamente para layouts com largura de 1280px (DESKTOP) e 380px (MOBILE)
+Desafio da Compass UOL que consiste em layouts responsivos sendo especificamente para layouts com largura de 1280px (DESKTOP) e 480px (MOBILE)
 no desafio as telas de inputs o Usuário ao clicar o botão "next" sem selecionar as opções de input[radio]/input[checkbox] e select deve ser impossibilitado
 de avançar para a próxima tela a não ser que ele clique no botão "skip", no desafio também contém a validação de formulario que ele so pode
 fazer o "Submit" quando os campos do formulário estiverem preenchidos.
