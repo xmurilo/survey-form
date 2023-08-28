@@ -34,6 +34,41 @@ fazer o "Submit" quando os campos do formulário estiverem preenchidos.
 - ✨ Padronização de Códigos em classes.
 - ✨ Armazenar valores dos campos no Local Storage.
 
+## ⚒️ Instalação
+
+Passos para instalar e configurar o seu projeto:
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/xmurilo/survey-form.git
+   
+2. **Navegue para o diretório do projeto:**
+   ```bash
+   cd survey-form
+
+3. **Abra o projeto no seu navegador:**
+    
+    Abra o arquivo pagina-1.html no seu navegador de sua preferência 
+    
+   ```bash
+    ├── survey-form
+        ├── css/
+        ├── imgs/
+        ├── js/
+        ├── pagina-1.html
+        ├── pagina-2.html
+        ├── pagina-3.html
+        ├── pagina-4.html
+        ├── ....
+
+4. **OBS:Ou você executar o comando no terminal para abrir o projeto:**
+Certifique-se de estar dentro do diretório do projeto !
+    ```bash
+        start pagina-1.html
+
+5. **Agora você pode navegar pelo projeto e ver como ele funciona.**
+6. **Edição e Personalização:**
+Sinta-se à vontade para fazer edições nos arquivos HTML, CSS e JS para personalizar o projeto de acordo com as suas necessidades.
 
 ## O que posso melhorar?  🔧
 
