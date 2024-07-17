@@ -1,80 +1,78 @@
 # survey-form
-## Sobre o projeto 📗
+## About the project 📗
 
-Desafio da Compass UOL que consiste em layouts responsivos sendo especificamente para layouts com largura de 1280px (DESKTOP) e 480px (MOBILE)
-no desafio as telas de inputs o Usuário ao clicar o botão "next" sem selecionar as opções de input[radio]/input[checkbox] e select deve ser impossibilitado
-de avançar para a próxima tela a não ser que ele clique no botão "skip", no desafio também contém a validação de formulario que ele so pode
-fazer o "Submit" quando os campos do formulário estiverem preenchidos.
+Compass UOL challenge that consists of responsive layouts specifically for layouts with a width of 1280px (DESKTOP) and 480px (MOBILE).
+In the challenge, on the input screens, the User, when clicking the "next" button without selecting the input[radio]/input[checkbox] and select options, should be prevented from advancing to the next screen unless they click the "skip" button. The challenge also includes form validation, where the User can only "Submit" when the form fields are filled.
 
-## 🚀 Recursos
+## 🚀 Features
 
-- ⭐ Recurso 1: Ao selecionar input[radio]/input[checkbox] e select o Usuário ao clicar em “Next” vai para próxima tela.
-- ⭐ Recurso 2: Validação de formulário so Usuário so consegue fazer o “Submit” ao preenche os campos do Formulário.
-- ⭐ Recurso 3: Responsividade para Desktop/Mobile/Tablet.
-- ⭐ Recurso 4: Armazenar valores dos campos no Local Storage
+- ⭐ Feature 1: When selecting input[radio]/input[checkbox] and select, the User, when clicking "Next," goes to the next screen.
+- ⭐ Feature 2: Form validation, where the User can only "Submit" when the form fields are filled.
+- ⭐ Feature 3: Responsiveness for Desktop/Mobile/Tablet.
+- ⭐ Feature 4: Store field values in Local Storage.
 
-## ⚡Tecnologias Usadas
-  <div>
-    <img height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />  
-    <img height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-    <img height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
+## ⚡ Technologies Used
+<div>
+        <img height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />  
+        <img height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+        <img height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> 
 </div>
 
-## O que aprendi ?💡
+## What I learned ?💡
 
-- ✨ Pixel Perfect: Aprendi que devemos nos importar e dar valor pela composição do todo do layout, respeitando suas larguras/alturas, tamanho de fontes, peso de fontes etc.
-- ✨ Mobile First: Ate então eu ja tinha feito 2 projetos com mobile first e com esse consegui aprender mais ainda.
-    - Instrutores do projeto aconselharam a iniciar pelo Mobile First, resolvi sair da minha zona de conforto que era iniciar o projeto para telas maiores, e no fim eu só ganhei é muito recompensador o conhecimento que consegue ao longo do projeto.
-- ✨Validação de Formulario: Aprendi outra forma de validar formulário dentre outras diversas.
-- ✨ Mais conhecimento em JS: Como pegar valor de input e trocar de pagina
-    - OBS: Para trocar de pagina recomendação do instrutor o melhor seria criar um roteamento de páginas com VanillaJS
-    -  <a target="_blank" href="https://dev.to/rohanbagchi/how-to-write-a-vanillajs-router-hk3">Como escrever roteamento de páginas em Vanilla JS</a>  | Link da Recomendação do instrutor
-    - Não tive tempo para aplicar pois acreditei que seria complexo e iria copiar código que não saberia qual a função dele.
-- ✨Eficiência na Documentação dos códigos.
-- ✨ Padronização de Códigos em classes.
-- ✨ Armazenar valores dos campos no Local Storage.
+- ✨ Pixel Perfect: I learned that we should care about and value the composition of the entire layout, respecting its widths/heights, font sizes, font weights, etc.
+- ✨ Mobile First: Until then, I had already done 2 projects with mobile first, and with this one, I was able to learn even more.
+        - Project instructors advised starting with Mobile First. I decided to step out of my comfort zone, which was starting the project for larger screens, and in the end, I only gained. It is very rewarding the knowledge gained throughout the project.
+- ✨ Form Validation: I learned another way to validate forms, among many others.
+- ✨ More JS knowledge: How to get input value and change pages.
+        - Note: To change pages, the instructor's recommendation was to create a page routing with VanillaJS.
+        -  <a target="_blank" href="https://dev.to/rohanbagchi/how-to-write-a-vanillajs-router-hk3">How to write page routing in Vanilla JS</a>  | Instructor's Recommendation Link
+        - I didn't have time to apply it because I believed it would be complex and I would be copying code that I wouldn't know its function.
+- ✨ Efficient code documentation.
+- ✨ Code standardization in classes.
+- ✨ Store field values in Local Storage.
 
-## ⚒️ Instalação
+## ⚒️ Installation
 
-Passos para instalar e configurar o seu projeto:
+Steps to install and set up your project:
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/xmurilo/survey-form.git
-   
-2. **Navegue para o diretório do projeto:**
-   ```bash
-   cd survey-form
+1. **Clone the repository:**
+     ```bash
+     git clone https://github.com/xmurilo/survey-form.git
+     
+2. **Navigate to the project directory:**
+     ```bash
+     cd survey-form
 
-3. **Abra o projeto no seu navegador:**
-    
-    Abra o arquivo pagina-1.html no seu navegador de sua preferência 
-    
-   ```bash
-    ├── survey-form
-        ├── css/
-        ├── imgs/
-        ├── js/
-        ├── pagina-1.html
-        ├── pagina-2.html
-        ├── pagina-3.html
-        ├── pagina-4.html
-        ├── ....
+3. **Open the project in your browser:**
+        
+        Open the pagina-1.html file in your preferred browser.
+        
+     ```bash
+        ├── survey-form
+                ├── css/
+                ├── imgs/
+                ├── js/
+                ├── pagina-1.html
+                ├── pagina-2.html
+                ├── pagina-3.html
+                ├── pagina-4.html
+                ├── ....
 
-4. **OBS:Ou você executar o comando no terminal para abrir o projeto:**
-Certifique-se de estar dentro do diretório do projeto !
-    ```bash
-        start pagina-1.html
+4. **NOTE: Or you can run the command in the terminal to open the project:**
+Make sure you are inside the project directory!
+        ```bash
+                start pagina-1.html
 
-5. **Agora você pode navegar pelo projeto e ver como ele funciona.**
-6. **Edição e Personalização:**
-Sinta-se à vontade para fazer edições nos arquivos HTML, CSS e JS para personalizar o projeto de acordo com as suas necessidades.
+5. **Now you can navigate through the project and see how it works.**
+6. **Editing and Customization:**
+Feel free to make edits to the HTML, CSS, and JS files to customize the project according to your needs.
 
-## O que posso melhorar?  🔧
+## What can I improve?  🔧
 
-- Quando o projeto chegou na parte lógica eu tive dificuldades, não foi por causa da lógica e sim quais métodos eu poderia usar para fazer a lógica, por exemplo “Como faço para pegar valor do input para ver se ele esta ‘checked’ ?“ “Como faço para trocar de pagina pelo JS?” tive esses questionamentos, penso muito que tenho que melhorar o mais rapido possivel nessa parte, seja fazendo desafios ou me aprofundando na documentação.
-- No meio do projeto eu fiquei meio perdido na questão de organização de código acredito que eu posso melhorar isso.
-- Mobile First por mais que eu tenha feito em mobile first acredito que eu posso melhorar ainda mais utilizando esse conceito.
-- Devo me atentar a quais tags HTML  podem estar dentro de outra tag
+- When the project reached the logical part, I had difficulties, not because of the logic itself, but which methods I could use to implement the logic. For example, "How do I get the value of the input to check if it is 'checked'?" "How do I change pages using JS?" I had these questions, and I think I need to improve in this area as soon as possible, either by doing challenges or delving into the documentation.
+- In the middle of the project, I got a bit lost in terms of code organization. I believe I can improve on that.
+- Mobile First, even though I did it in mobile first, I believe I can further improve by using this concept.
+- I should pay attention to which HTML tags can be nested inside another tag.
 
-No mais é isso muito feliz por ter completado o desafio pensava que não iria conseguir mas me esforcei ao máximo, dicas, correções, criticas construtivas etc são sempre bem vindas acredito que com isso só tem a somar.
+That's it, I'm very happy to have completed the challenge. I thought I wouldn't be able to, but I tried my best. Tips, corrections, constructive criticism, etc., are always welcome. I believe that with that, we can only add value.
