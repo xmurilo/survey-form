@@ -61,8 +61,8 @@ Steps to install and set up your project:
 
 4. **NOTE: Or you can run the command in the terminal to open the project:**
 Make sure you are inside the project directory!
-        ```bash
-                start pagina-1.html
+     ```bash
+        start pagina-1.html
 
 5. **Now you can navigate through the project and see how it works.**
 6. **Editing and Customization:**
